@@ -1,0 +1,242 @@
+body  {
+  margin: auto;
+  height: auto;
+  background-color: #ffffff;
+
+}
+
+header  {
+  margin: auto;
+  height: auto;
+  background-color: rgb(153, 130, 216) ;  
+}
+
+.head-nav  {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  margin: auto;
+  height: auto;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+
+
+}
+.image-box  {
+  height: 80px;
+}
+
+.aca-logo  {
+  height: 140px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+section  {
+  text-align: center;
+  margin: auto;
+}
+
+nav>section  {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+
+main  {
+  margin: auto;
+  height: auto;
+}
+
+h1  {
+  font-size: 110px;
+  border-bottom: black solid 3pt;
+  width: 600px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  color: #072c94;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+h2  {
+  font-size: 30px;
+  text-align: center;
+  color: #de41cd;
+  font-family: 'Merriweather', serif;
+}
+
+.image-gallery  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1px;
+  justify-content: center;
+}
+
+.wrapper {
+  margin: auto;
+}
+
+.detail {
+  padding: 0px 20px 10px 20px;
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+.image-gallery .box  {
+  width: 95%;
+  height: 95%;
+  position: relative;
+  overflow: hidden;
+}
+
+.box img  {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor:pointer;
+  transition: 3s ease-in-out;
+}
+
+.box:hover img  {
+  transform: scale(1.5);
+}
+
+.box .text  {
+  opacity: 0;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-size: 18px;
+  pointer-events: none;
+  z-index: 4;
+  transition: 1s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.671);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Arimo', sans-serif;
+  align-items: center;
+}
+
+.box:hover .text {
+  opacity: 1;
+}
+
+footer  {
+  background-color: rgb(153, 130, 216) ;
+  margin: auto;
+}
+
+.foot-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+
+
+
+h3  {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+.foot-logo  {
+  height: 40px;
+}
+
+.aca-logo-foot  {
+  height: 180%;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+
+}
+
+.foot-img  {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  padding-top: 5px;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+
+}
+
+.follow-us  a{
+  color: black;
+  margin-top: 0;
+  justify-content: center;
+  padding: 15px;
+}
+
+.icons  {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.follow-us a  {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (max-width: 700px)  {
+
+  header  {
+    margin: auto;
+    height: auto;
+  }
+  
+  main {
+    height: auto;
+  }
+
+  .head-nav  {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50%;
+    margin: auto;
+    height: auto;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+  }
+
+  h1  {
+    font-size: 80px;
+    width: 380px;
+  }
+
+  h2  {
+    font-size: 18px;
+  }
+
+  .image-gallery  {
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-auto-rows: auto;
+    padding-bottom: 50px;
+    grid-gap: 1px;
+    justify-content: center;
+  }
+
+  
+}
